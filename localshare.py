@@ -81,7 +81,6 @@ def download_file(file_id):
                         download_name=file_id)
     return jsonify({'error': '文件不存在'}), 404
 
-# HTML模板保持不变，但移除用户ID相关的HTML部分
 HTML_TEMPLATE = '''
 <!DOCTYPE html>
 <html>
